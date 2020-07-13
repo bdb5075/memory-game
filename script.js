@@ -1,10 +1,3 @@
-// var images = [
-// 	"url('img/cat.jpg') center center",
-// 	"url('img/cat.jpg') center center",
-// 	"url('img/duck.jpg') center center / 250px 250px",
-// 	"url('img/duck.jpg') center center / 250px 250px"
-// ];
-
 var squares = document.querySelectorAll('.square');
 
 var hasFlippedCard = false;
@@ -55,32 +48,6 @@ function checkMatch() {
 	} 
 }
 
-
-// function flipCard() {
-// 	if (!hasFlippedCard) {
-// 		console.log("This is the first card!");
-// 		hasFlippedCard = true;
-// 		firstImage = this.style.background.replace(/"/g,"'");
-// 		console.log(firstImage);
-// 	} else {
-// 		console.log("This is the second card!");
-// 		hasFlippedCard = false;
-// 		secondImage = this.style.background.replace(/"/g,"'");
-// 		console.log(secondImage);
-// 		checkMatch();
-// 	} 
-// }
-
-// function checkMatch() {
-// 	if (firstImage === secondImage) {
-		
-// 	} else {
-// 		console.log("nooo");
-// 	}
-// }
-
-
-
 for (var i=0; i<squares.length; i++) {
 	//Assign random positions (shuffle)
 	let position = Math.floor(Math.random()*12);
@@ -89,29 +56,6 @@ for (var i=0; i<squares.length; i++) {
 	squares[i].addEventListener("click", flipCard);
 }
 
-
-
-
-// var pickedSquare = images[1];
-
-// for (var i=0; i<squares.length; i++) {
-// 	squares[i].style.background = images[i];
-
-// 	squares[i].addEventListener("click", function(){
-// 		//get image of clicked square
-// 		var image = this.style.background;
-// 		//replace "" with ''
-// 		var clickedSquare = image.replace(/"/g,"'");
-
-// 		//is clicked square equal to picked square? 
-		
-// 		if(clickedSquare === pickedSquare) {
-// 			alert('Correct!');
-// 		} else {
-// 			alert('Wrong!');
-// 		}
-// 	})
-// }
 
 
 
